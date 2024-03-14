@@ -1,0 +1,86 @@
+.welcome {
+    max-width: 100vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 31px;
+    height: 945px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    animation: mymove 15s linear infinite;
+}
+
+.welcome__text-block {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    align-self: start;
+    margin-left: 285px;
+    margin-top: 270px;
+}
+
+.welcome__text {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__title {
+    margin: 0;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.welcome__subtitle {
+    margin: 0;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.welcome__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.welcome__button {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border: none;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+@keyframes mymove {
+    0% {
+        background-image: url("../../../public/main-background-xl-1.png");
+    }
+    25% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    26% {
+        background-image: url("../../../public/main-background-xl-2.png");
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    51% {
+        background-image: url("../../../public/main-background-xl-3.png");
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    76% {
+        background-image: url("../../../public/main-background-xl-4.png");
+    }
+    100% {
+        background-image: url("../../../public/main-background-xl-1.png");
+    }
+}

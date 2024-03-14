@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 70px;
+}
+
+.header__logo-info {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+
+.logo-link {
+    cursor: pointer;
+    max-height: 36px;
+}
+
+.logo {
+    max-width: 85px;
+    max-height: 36px;
+}
+
+.logo-text {
+    max-width: 193px;
+    color: white;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.header__number {
+    color: white;
+    font-size: 16px;
+    padding: 6px 30px;
+    margin: 0;
+    border: 1px solid white;
+    border-radius: 15px;
+}

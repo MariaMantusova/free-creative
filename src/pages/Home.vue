@@ -1,8 +1,9 @@
 <script setup>
+  import Welcome from "../components/Welcome/Welcome.vue";
 </script>
 
 <template>
-  <h1>Главная страница</h1>
+  <Welcome />
 </template>
 
 <style scoped>
