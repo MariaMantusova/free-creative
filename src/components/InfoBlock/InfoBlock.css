@@ -6,12 +6,43 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 1200px) {
+    .info-block {
+       max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .info-block {
+        max-width: 90%;
+        padding-top: 85px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .info-block {
+       padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .info-block {
+       padding-top: 60px;
+    }
+}
+
 .info-block__title {
     font-size: 38px;
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 15px;
     line-height: 1.4;
+}
+
+@media screen and (max-width: 770px) {
+    .info-block__title {
+        font-size: 32px;
+    }
 }
 
 .title_reversed {
@@ -23,8 +54,33 @@
     gap: 30px;
 }
 
+@media screen and (max-width: 870px) {
+    .info-block__container {
+        flex-direction: column;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info-block__container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .info-block__container {
+        max-width: 290px;
+    }
+}
+
 .container_reversed {
     flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 870px) {
+    .container_reversed {
+        flex-direction: column;
+    }
 }
 
 .info-block__image {
@@ -34,6 +90,12 @@
     object-position: center;
 }
 
+@media screen and (max-width: 870px) {
+    .info-block__image {
+        max-width: 100%
+    }
+}
+
 .text-block__container {
     max-width: 400px;
     gap: 25px;
@@ -41,10 +103,28 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 870px) {
+    .text-block__container {
+        max-width: 100%;
+    }
+}
+
 .info-block__text {
     margin: 0;
     font-size: 17px;
     line-height: 1.4;
+}
+
+@media screen and (max-width: 770px) {
+    .text-block__container {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-block__container {
+        font-size: 15px;
+    }
 }
 
 .text-block__back_blue {
@@ -68,5 +148,4 @@
     font-size: 24px;
     font-weight: lighter;
     margin: 0;
-
 }
