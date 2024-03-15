@@ -4,14 +4,45 @@
     display: flex;
     align-items: center;
     padding-top: 31px;
-    height: 945px;
+    height: 910px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     flex-direction: column;
 
-    animation: mymove 15s linear infinite;
+    animation: mymoveXL 15s linear infinite;
+}
+
+@media screen and (max-width: 1000px) {
+    .welcome {
+        animation: mymoveL 15s linear infinite;
+        height: 740px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .welcome {
+        padding-top: 40px;
+        animation: end;
+        height: 980px;
+        background-image: url("../../../public/main-background-m.png");
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .welcome {
+        background-image: url("../../../public/main-background-s.png");
+        padding-top: 25px;
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .welcome {
+        background-image: url("../../../public/main-background-xs.png");
+        height: 615px;
+    }
 }
 
 .welcome__text-block {
@@ -24,10 +55,68 @@
     margin-top: 270px;
 }
 
+@media screen and (max-width: 1450px) {
+    .welcome__text-block {
+        margin-left: 180px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .welcome__text-block {
+       margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .welcome__text-block {
+        margin-left: 50px;
+        max-width: 493px;
+        margin-top: 220px;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .welcome__text-block {
+        margin-left: 41px;
+        gap: 70px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .welcome__text-block {
+        margin-top: 85px;
+        gap: 25px;
+        max-width: 310px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .welcome__text-block {
+        margin-left: 30px;
+        gap: 35px;
+        max-width: 240px;
+    }
+}
+
 .welcome__text {
     gap: 30px;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 580px) {
+    .welcome__text {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .welcome__text {
+        gap: 10px;
+    }
 }
 
 .welcome__title {
@@ -36,15 +125,52 @@
     font-weight: normal;
 }
 
+@media screen and (max-width: 1000px) {
+    .welcome__title {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .welcome__title {
+        font-size: 30px;
+    }
+}
+
 .welcome__subtitle {
     margin: 0;
     font-size: 30px;
     font-weight: lighter;
 }
 
+@media screen and (max-width: 1000px) {
+    .welcome__subtitle {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .welcome__subtitle {
+        font-size: 20px;
+    }
+}
+
 .welcome__buttons {
     display: flex;
     gap: 20px;
+}
+
+@media screen and (max-width: 770px) {
+    .welcome__buttons {
+        flex-direction: column;
+        gap: 38px;
+        max-width: 212px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .welcome__buttons {
+        gap: 25px;
+    }
 }
 
 .welcome__button {
@@ -58,7 +184,19 @@
     cursor: pointer;
 }
 
-@keyframes mymove {
+@media screen and (max-width: 1000px) {
+    .welcome__button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .welcome__button {
+        text-align: center;
+    }
+}
+
+@keyframes mymoveXL {
     0% {
         background-image: url("../../../public/main-background-xl-1.png");
     }
@@ -82,5 +220,33 @@
     }
     100% {
         background-image: url("../../../public/main-background-xl-1.png");
+    }
+}
+
+
+@keyframes mymoveL {
+    0% {
+        background-image: url("../../../public/main-background-l-1.png");
+    }
+    25% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    26% {
+        background-image: url("../../../public/main-background-l-2.png");
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    51% {
+        background-image: url("../../../public/main-background-l-3.png");
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    76% {
+        background-image: url("../../../public/main-background-l-4.png");
+    }
+    100% {
+        background-image: url("../../../public/main-background-l-1.png");
     }
 }
