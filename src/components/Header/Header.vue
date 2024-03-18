@@ -1,5 +1,6 @@
 <script setup>
   import { RouterLink } from 'vue-router';
+  import BurgerMenu from "../BurgerMenu/BurgerMenu.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@
       <p class="logo-text">Разрабатываем фирменные стили с 2009 года</p>
     </div>
     <p class="header__number">8 (495) 156-39-11</p>
+    <BurgerMenu/>
   </header>
 </template>
 
