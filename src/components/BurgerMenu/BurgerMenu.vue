@@ -2,7 +2,7 @@
   import {ref} from "vue";
   import { RouterLink } from 'vue-router';
 
-  const isMenuOpened = ref(true);
+  const isMenuOpened = ref(false);
 
   function closeMenu() {
     isMenuOpened.value = false

@@ -1,0 +1,16 @@
+.term-point {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.term__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.term__text {
+    margin: 0;
+    font-size: 16px;
+}
