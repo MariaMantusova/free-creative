@@ -1,0 +1,6 @@
+.points__list {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin: 0;
+}

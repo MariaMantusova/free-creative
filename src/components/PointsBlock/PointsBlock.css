@@ -1,0 +1,37 @@
+.points-block {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.points-block_guaranty {
+    width: 100%;
+    background-image: url("./../../../public/garanty-background-usual.png");
+    padding-top: 285px;
+    padding-bottom: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-top: 130px;
+}
+
+.points-block__container {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+.points-block__container_guaranty {
+    max-width: 78%;
+}
+
+.points-block__title {
+    font-size: 43px;
+    font-weight: lighter;
+    margin: 0;
+    align-self: flex-start;
+}

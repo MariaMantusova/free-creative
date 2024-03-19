@@ -1,6 +1,7 @@
 <script setup>
   import Welcome from "../components/Welcome/Welcome.vue";
   import InfoBlock from "../components/InfoBlock/InfoBlock.vue";
+  import PointsBlock from '../components/PointsBlock/PointsBlock.vue';
 </script>
 
 <template>
@@ -19,6 +20,14 @@
       с ним на одном языке.
     </p>
   </InfoBlock>
+
+  <PointsBlock title='Название и логотип – важные составляющие фирменного стиля, но на этом всё только начинается.
+  Ниже основные элементы:'>
+    <p class='info-point__span'>
+      Этот набор варьируется в зависимости от нужд и потребностей компании: визитные карточки,
+      фирменные бланки и прочая деловая документация, упаковка, сувенирная продукция, брендинг автотранспорта.
+    </p>
+  </PointsBlock>
 
   <InfoBlock imageUrl="./price-block-img.png" title="Сколько стоит фирменный стиль?" titleClass="title_reversed"
              blockClass="container_reversed">
@@ -52,6 +61,9 @@
       ваш бизнес посредством франшизы.
     </p>
   </InfoBlock>
+
+  <PointsBlock blockClass='points-block_guaranty'
+               title='Гарантия качества: 5&nbsp;фундаментальных&nbsp;преимуществ работать&nbsp;с&nbsp;нами'/>
 </template>
 
 <style scoped>
