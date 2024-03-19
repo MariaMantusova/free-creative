@@ -4,3 +4,20 @@
     gap: 80px;
     margin: 0;
 }
+
+@media screen and (max-width: 1020px) {
+    .points__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .points__list {
+        flex-direction: column;
+        align-self: flex-start;
+        padding-left: 40px;
+        width: 90%;
+    }
+}
