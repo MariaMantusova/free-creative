@@ -2,6 +2,7 @@
   import Welcome from "../components/Welcome/Welcome.vue";
   import InfoBlock from "../components/InfoBlock/InfoBlock.vue";
   import PointsBlock from '../components/PointsBlock/PointsBlock.vue';
+  import FormBlock from '../components/FormBlock/FormBlock.vue';
 </script>
 
 <template>
@@ -61,6 +62,10 @@
       ваш бизнес посредством франшизы.
     </p>
   </InfoBlock>
+
+  <FormBlock title='Оставьте заявку на разработку вашего продукта'>
+    <p class='form-block__subtitle'>Наши эксперты свяжутся с вами в ближайшее время</p>
+  </FormBlock>
 
   <PointsBlock blockClass='points-block_guaranty'
                title='Гарантия качества: 5&nbsp;фундаментальных&nbsp;преимуществ работать&nbsp;с&nbsp;нами'/>
