@@ -3,6 +3,12 @@
     gap: 30px;
 }
 
+@media screen and (max-width: 1100px) {
+    .form {
+       flex-direction: column;
+    }
+}
+
 .form_vertical {}
 
 .form__container {
@@ -14,6 +20,12 @@
 .form__inputs {
     display: flex;
     gap: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .form__inputs {
+        flex-direction: column;
+    }
 }
 
 .form__input {
@@ -33,6 +45,18 @@
     display: flex;
     font-size: 18px;
     gap: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .form__checkbox-label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form__checkbox-label {
+        flex-wrap: wrap;
+    }
 }
 
 .form__checkbox {
@@ -55,4 +79,5 @@
     border-radius: 40px;
     max-height: 57px;
     cursor: pointer;
+    max-width: 213px;
 }
