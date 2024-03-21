@@ -1,0 +1,33 @@
+.step {
+    display: flex;
+    gap: 97px;
+    align-items: center;
+}
+
+.step__image-block {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.step__image {
+    max-width: 85px;
+    max-height: 87px;
+}
+
+.step__image-text {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.step__text-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
