@@ -1,0 +1,77 @@
+.point {
+    display: flex;
+    gap: 30px;
+}
+
+.point__text {
+    background-color: #2B59C3;
+    margin: 0;
+    max-width: 160px;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    padding-top: 15px;
+}
+
+.point__text_top {
+    border-radius: 10px 10px 0 0;
+}
+
+.point__text_bottom {
+    border-radius: 0 0 10px 10px;
+}
+
+.candidates {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 0.5px solid #868686;
+    z-index: -1;
+}
+
+.candidates_no-border {
+    border: none;
+}
+
+.candidate__text {
+    max-width: 260px;
+    width: 100%;
+    z-index: 1;
+    font-size: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0;
+    text-align: center;
+}
+
+.candidate__text-title {
+    font-size: 35px;
+    color: #868686;
+    margin: 0;
+    max-width: 360px;
+    padding: 15px 0 0;
+}
+
+.candidate__text-title_best {
+    padding: 15px 15px 0;
+    border-right: 4px solid #2B59C3;
+    border-left: 4px solid #2B59C3;
+    border-top: 4px solid #2B59C3;
+    color: #2B59C3;
+    border-radius: 10px 10px 0 0;
+}
+
+.candidate__text_best {
+    padding: 25px 15px;
+    margin: 0;
+    border-left: 4px solid #2B59C3;
+    border-right: 4px solid #2B59C3;
+    z-index: 3;
+}
+
+.candidate__text_border {
+    border-bottom: 4px solid #2B59C3;
+    border-radius: 0 0 10px 10px;
+}

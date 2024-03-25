@@ -1,0 +1,8 @@
+.comparisons {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
