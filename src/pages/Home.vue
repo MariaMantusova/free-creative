@@ -5,6 +5,7 @@
   import FormBlock from '../components/FormBlock/FormBlock.vue';
   import StepsBlock from '../components/StepsBlock/StepsBlock.vue';
   import Comparisons from '../components/Comparisons/Comparisons.vue';
+  import Relations from '../components/Relations/Relations.vue';
 </script>
 
 <template>
@@ -75,6 +76,8 @@
 
   <PointsBlock blockClass='points-block_guaranty'
                title='Гарантия качества: 5&nbsp;фундаментальных&nbsp;преимуществ работать&nbsp;с&nbsp;нами'/>
+
+  <Relations />
 </template>
 
 <style scoped>

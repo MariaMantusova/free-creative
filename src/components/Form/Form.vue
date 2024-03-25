@@ -3,13 +3,14 @@
 
   defineProps({
     formClass: String,
+    formInputsClass: String,
   })
 </script>
 
 <template>
   <form :class='`form ${formClass}`'>
     <div class='form__container'>
-      <div class='form__inputs'>
+      <div :class='`form__inputs ${formInputsClass}`'>
         <input class='form__input' type='text' placeholder='Ваше имя'/>
         <input class='form__input' type='tel' placeholder='+7 (999) 999-99-99'/>
       </div>

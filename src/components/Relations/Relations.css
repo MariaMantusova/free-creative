@@ -1,0 +1,25 @@
+.relations {
+    display: flex;
+    max-width: 70%;
+    align-items: baseline;
+    margin-top: 50px;
+    width: 100%;
+    gap: 100px;
+}
+
+.relations__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacts__title {
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+.contacts__item {
+    margin: 0;
+    font-size: 22px;
+}

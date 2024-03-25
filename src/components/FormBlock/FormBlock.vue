@@ -3,15 +3,19 @@
 
   defineProps({
     title: String,
+    formClass: String,
+    formInputsClass: String,
+    formContainerClass: String,
+    formBlockClass: String,
   })
 </script>
 
 <template>
-  <section class='form-block'>
+  <section :class='`form-block ${formBlockClass}`'>
     <h2 class='form-block__title'>{{ title }}</h2>
     <slot></slot>
 
-    <Form />
+    <Form :formClass='formClass' :formInputsClass='formInputsClass' />
   </section>
 </template>
 
