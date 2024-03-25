@@ -7,6 +7,21 @@
     gap: 100px;
 }
 
+@media screen and (max-width: 1235px) {
+    .relations {
+        max-width: 80%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .relations {
+        max-width: 90%;
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+
 .relations__contacts {
     display: flex;
     flex-direction: column;
@@ -19,7 +34,19 @@
     margin: 0 0 15px;
 }
 
+@media screen and (max-width: 1080px) {
+    .contacts__title {
+       font-size: 30px;
+    }
+}
+
 .contacts__item {
     margin: 0;
     font-size: 22px;
+}
+
+@media screen and (max-width: 1080px) {
+    .contacts__item {
+        font-size: 20px;
+    }
 }

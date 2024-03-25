@@ -28,6 +28,7 @@
 @media screen and (max-width: 700px) {
     .form__inputs {
         flex-direction: column;
+        max-width: 270px;
     }
 }
 
@@ -36,6 +37,13 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .form__inputs_vertical {
+        flex-direction: column;
+        max-width: 290px;
+    }
 }
 
 .form__input {
@@ -63,7 +71,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1090px) {
     .form__checkbox-label {
         flex-wrap: wrap;
     }
