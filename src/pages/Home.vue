@@ -6,6 +6,8 @@
   import StepsBlock from '../components/StepsBlock/StepsBlock.vue';
   import Comparisons from '../components/Comparisons/Comparisons.vue';
   import Relations from '../components/Relations/Relations.vue';
+  import Footer from '../components/Footer/Footer.vue';
+  import MediaBlock from '../components/MediaBlock/MediaBlock.vue';
 </script>
 
 <template>
@@ -78,6 +80,10 @@
                title='Гарантия качества: 5&nbsp;фундаментальных&nbsp;преимуществ работать&nbsp;с&nbsp;нами'/>
 
   <Relations />
+
+  <MediaBlock />
+
+  <Footer />
 </template>
 
 <style scoped>

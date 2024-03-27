@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 70%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1020px) {
+    .footer {
+        max-width: 90%;
+    }
+}
+
+.footer__text {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1020px) {
+    .footer__text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer__text {
+        font-size: 15px;
+    }
+}
+
+

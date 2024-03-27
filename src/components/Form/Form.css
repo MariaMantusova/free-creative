@@ -28,7 +28,7 @@
 @media screen and (max-width: 700px) {
     .form__inputs {
         flex-direction: column;
-        max-width: 270px;
+        max-width: 220px;
     }
 }
 
@@ -42,7 +42,7 @@
 @media screen and (max-width: 700px) {
     .form__inputs_vertical {
         flex-direction: column;
-        max-width: 290px;
+        max-width: 220px;
     }
 }
 
