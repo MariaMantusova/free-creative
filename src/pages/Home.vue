@@ -8,6 +8,7 @@
   import Relations from '../components/Relations/Relations.vue';
   import Footer from '../components/Footer/Footer.vue';
   import MediaBlock from '../components/MediaBlock/MediaBlock.vue';
+  import Popup from "../components/Popup/Popup.vue";
 </script>
 
 <template>
@@ -84,6 +85,8 @@
   <MediaBlock />
 
   <Footer />
+
+  <Popup />
 </template>
 
 <style scoped>
