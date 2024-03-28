@@ -182,6 +182,12 @@
     padding: 20px 40px;
     border-radius: 40px;
     cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.welcome__button:hover {
+    background-color: #2B59C3;
+    color: white;
 }
 
 @media screen and (max-width: 1000px) {
