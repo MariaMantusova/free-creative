@@ -5,17 +5,26 @@
 <template>
   <h1 class='portfolio__title'>Наши работы</h1>
   <ul class='portfolio__list'>
-    <PortfolioProject projectImageUrl='./projects/amperia.png' projectName='Amperia'
-                      projectSubtitle='Бренд красивых сувениров и подарков для дома' />
+    <PortfolioProject projectImageUrl='./projects/amperia.png' projectName='Amperia' 
+    projectDescription="В айдентике мы отразили то, как искажается мир, если посмотреть на него через лава-лампу.
+     Причудливые формы и яркие цвета лава-лампы часто сравнивают с эффектом от психоделических препаратов, 
+     которые были популярны среди хиппи в 60-е, поэтому для айдентики мы подобрали два ярких кислотных цвета — 
+     морской зеленый и фиолетовый." projectSubtitle='Бренд красивых сувениров и подарков для дома' />
 
     <PortfolioProject projectImageUrl='./projects/aqlifecare.png' projectName='AQ.Lifecare'
-                      projectSubtitle='Инновационная клиника внутривенной медицины'/>
+     projectDescription="В айдентике мы отразили лаконичность и простоту.
+    Ровные линии и спокойные цвета сравнивают с четкостью работы инновационных препаратов, 
+     которые производит данная клиника, поэтому для айдентики мы подобрали два простых цвета — 
+     мятно зеленый и белый." projectSubtitle='Инновационная клиника внутривенной медицины'/>
 
-    <PortfolioProject projectImageUrl='./projects/vilata.png' projectName='Vilata'
-                      projectSubtitle='Бренд натуральных и вкусных соусов'/>
+    <PortfolioProject projectImageUrl='./projects/vilata.png' projectName='Vilata' 
+    projectDescription="В айдентике мы отразили яркость и натуральность продуктов.
+    На вид простую банку балансируют яркие цвета и необычные вкусы, поэтому для айдентики мы подобрали несколько 
+    ярких кислотных цвета —  желтый, крсаный и зеленый." projectSubtitle='Бренд натуральных и вкусных соусов'/>
 
-    <PortfolioProject projectImageUrl='./projects/coral-black.png' projectName='Coral Black'
-                      projectSubtitle='Черная икра в современной инторпритации'/>
+    <PortfolioProject projectImageUrl='./projects/coral-black.png' projectName='Coral Black' 
+    projectDescription="В айдентике мы отразили то, с чем ассоцируется икра, а именно черный и оранжевый цвета.
+     Простая формы и четкие линии демонстрируют четкость и качество." projectSubtitle='Черная икра в современной инторпритации'/>
   </ul>
 </template>
 

@@ -1,8 +1,11 @@
 <script setup>
+  import ProjectPopup from "../ProjectPopup/ProjectPopup.vue";
+
   defineProps({
     projectImageUrl: String,
     projectName: String,
     projectSubtitle: String,
+    projectDescription: String
   })
 </script>
 
@@ -17,6 +20,8 @@
       <button class='project__button'>Смотреть проект</button>
     </div>
   </li>
+
+  <ProjectPopup :image="projectImageUrl" :text="projectDescription" />
 </template>
 
 <style scoped src='./PortfolioProject.css'></style>
