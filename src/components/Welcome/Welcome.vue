@@ -1,6 +1,10 @@
 <script setup>
   import { RouterLink } from 'vue-router';
   import Header from "../Header/Header.vue";
+
+  defineProps({
+    handlePopupOpen: Function,
+  })
 </script>
 
 <template>
@@ -15,7 +19,7 @@
 
       <div class="welcome__buttons">
         <router-link to="/portfolio" class="welcome__button">Портфолио</router-link>
-        <button class="welcome__button">Оставить заявку</button>
+        <button class="welcome__button" @click="handlePopupOpen">Оставить заявку</button>
       </div>
     </div>
   </section>

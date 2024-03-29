@@ -1,4 +1,5 @@
 <script setup>
+  import { ref } from "vue";
   import Welcome from "../components/Welcome/Welcome.vue";
   import InfoBlock from "../components/InfoBlock/InfoBlock.vue";
   import PointsBlock from '../components/PointsBlock/PointsBlock.vue';
@@ -9,10 +10,20 @@
   import Footer from '../components/Footer/Footer.vue';
   import MediaBlock from '../components/MediaBlock/MediaBlock.vue';
   import Popup from "../components/Popup/Popup.vue";
+
+  const isPopupOpened = ref(false);
+
+  function handlePopupClose() {
+    isPopupOpened.value = false;
+  }
+
+  function handlePopupOpen() {
+    isPopupOpened.value = true;
+  }
 </script>
 
 <template>
-  <Welcome />
+  <Welcome :handlePopupOpen="handlePopupOpen" />
 
   <InfoBlock imageUrl="./style-block-img.png" title="Что такое фирменный стиль?">
     <p class="info-block__text">Это набор тех уникальных «признаков», по которым клиент отличит вас от других компаний.
@@ -86,7 +97,7 @@
 
   <Footer />
 
-  <Popup />
+  <Popup :isPopupOpened="isPopupOpened" :handlePopupClose="handlePopupClose"/>
 </template>
 
 <style scoped>
