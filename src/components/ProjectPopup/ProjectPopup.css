@@ -8,8 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* visibility: hidden;
-    opacity: 0; */
+    visibility: hidden;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
@@ -42,6 +42,8 @@
     position: absolute;
     right: -45px;
     top: -45px;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -49,6 +51,10 @@
         right: 0;
         top: -55px;
     }
+}
+
+.project-popup__close-button:hover {
+    opacity: 0.6;
 }
 
 .project-popup__image {
