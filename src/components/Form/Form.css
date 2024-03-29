@@ -99,3 +99,8 @@
     cursor: pointer;
     max-width: 213px;
 }
+
+.form_button:disabled {
+    background-color: #868686;
+    cursor: not-allowed;
+}

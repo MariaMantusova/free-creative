@@ -1,5 +1,4 @@
 <script setup>
-    import { ref } from "vue";
     import Form from '../Form/Form.vue';
 
     defineProps({
@@ -15,7 +14,7 @@
 
             <h2 class="popup__title">Оставить заявку</h2>
 
-            <Form formInputsClass='form__inputs_vertical' formClass='form_vertical' />
+            <Form formInputsClass='form__inputs_vertical' formClass='form_vertical' :closePopup='handlePopupClose' />
         </section>
     </div>
 </template>
